@@ -1,79 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-<!--
-WRITTEN BY: Neeraja Beesetti
-EMAIL: nbeesett@uci.edu
--->
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Neeraja Beesetti">
-  <meta name="description" content="Main landing/home page for my portfolio">
-  <!-- you would link to an external stylesheet here! -->
-  <!-- you would also link to Bootstrap here! -->
-  <title>Home</title>
-  <!--Bootstrap CSS-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
-  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullerton Housing</title>
+  <link href="output.css" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Nav Bar -->
-  <ul>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a class="active" href="index.html">Home</a></li>
-  </ul>
+  <div class="navbar">
+    <img class="logo" src="imgs/logo.png" alt="Temporary OC United Logo">
 
-  <!-- bootstrap table syntax from bootstrap's documentation + class slides -->
-  <section>
-    <div class="innerblob"></div>
-    <table class="container intro">
-      <tr class="row">
-        <th class="d-none d-md-block col-md-8 h1">Hi There!</th>
-      </tr>
-      <tr class="row">
-        <!-- placeholder text from = https://loremipsum.io/ -->
-        <th class="d-none d-md-block col-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum.
-        </th>
-      </tr>
-    </table>
-    <img src="imgs/profilepic.png" alt="Temporary Profile Picture" width="250" height="250"
-      style="border:5px solid white">
-    <h1>Neeraja Beesetti</h1>
-    <p>Computer Science Student @ UC Irvine</p>
-  </section>
-
-  <div class="container">
-    <table class="container tablelinks">
-      <tr>
-        <th>
-          <p>
-            <a href="https://github.com/nbeesetti">
-              Visit My GitHub
-            </a>
-          </p>
-        </th>
-        <th>
-          <p>
-            <a href="https://www.linkedin.com/in/neerajabeesetti/">
-              Visit My LinkedIn
-            </a>
-          </p>
-        </th>
-
-    </table>
+    <ul>
+      <li page="about"><a href="about.html">ABOUT US</a></li>
+      <li page="faq"><a href="faq.html">FAQ</a></li>
+      <li page="allies"><a href="allies.html">ALLIES</a></li>
+      <li page="videos"><a href="videos.html">VIDEOS</a></li>
+      <li page="news"><a href="news.html">NEWS</a></li>
+    </ul>
+    
+    <div class="search-container">
+      <img class="search-icon w-" src="imgs/search-icon.jpg" alt="Search" onclick="expandSearch()">
+      <input type="text" class="search-input" placeholder="Search...">
+    </div>
 
   </div>
+
+  <div class="hero-section">
+    <div class="hero-text-bg">
+      <h1 class="hero-text">Fullerton Housing Alliance</h1>
+    </div>
+  </div>
+
+
+  <!-- TODO: ADD CONTENT AND EDIT CSS -->
+  <div class="content-section">
+    <div class="image-section">
+      <!-- Image Content -->
+    </div>
+    <div class="text-section">
+      <!-- Text Content -->
+      <a class="button" href="#">Learn more</a>
+    </div>
+    <div class="text-section">
+      <!-- Text Content -->
+      <a class="button" href="#">Learn more</a>
+    </div>
+    <div class="image-section">
+      <!-- Image Content -->
+    </div>
+    <div class="image-section">
+      <!-- Image Content -->
+    </div>
+    <div class="text-section">
+      <!-- Text Content -->
+      <a class="button" href="#">Learn more</a>
+    </div>
+  </div>
+
+  <div class="heading">
+    <!-- Heading Content Here -->
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 Fullerton Housing Alliance | Licensed under the <a
+        href="https://github.com/nbeesetti/fullerton-housing-website?tab=GPL-3.0-1-ov-file#readme"
+        class="text-blue-300">GPL 3.0 License</a>
+    </p>
+
+    <p>View Source on <a href="https://github.com/nbeesetti/fullerton-housing-website" class="text-blue-300">GitHub</a>
+      | Join our
+      <a href="https://ocunited.org/" class="text-blue-300">Community</a>
+    </p>
+
+    <p>Developed by UC Irvine INF 117 Spring 2024 Team</p>
+  </footer>
+
+  <script src="index.js"></script>
 
 </body>
 
