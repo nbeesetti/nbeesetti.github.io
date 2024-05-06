@@ -784,12 +784,20 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.visible {
+  visibility: visible;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
